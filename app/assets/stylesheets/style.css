@@ -91,7 +91,7 @@ a {
 /* フォーム周り */
 
 .form__wrapper{
-  min-height: calc(100vh - 161px);
+  min-height: calc(100vh - 120px);
 }
 
 .form__text {
@@ -99,7 +99,7 @@ a {
 }
 
 .field{
-  margin: 10px 0;
+  margin: 30px 0;
 }
 
 .actions{
@@ -126,12 +126,18 @@ a {
 }
 
 /* メイン */
+
 .main-image {
+  position: relative;
   object-fit: cover;
   opacity: 60%
 }
 .greeting{
-  margin-bottom: 20px;
+  margin-top: 100px;
+  position: absolute;
+  top: 0;
+  font-size: large;
+  font-weight: bold;
 }
 .greeting__link{
   text-decoration: underline;
@@ -279,13 +285,13 @@ a {
 /* フッター */
 
 .footer {
-  background-color: rgb(207, 205, 205);
-  padding: 0px 0;
+  background-color: rgb(176, 175, 175);
+  padding: 10px 0;
 }
 .copyright {
   text-align: center;
   color: #fff;
-  font-size: 10px;
+  font-size: 13px;
 }
 
 /* タブレット対応 */
