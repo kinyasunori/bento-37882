@@ -1,14 +1,17 @@
 <main class="main">
-   <img class="main-image" src="https://i.gyazo.com/c117cf90eeb03fe52ec076b935dc3569.jpg" alt="トップ画面" width="100%" height="50%" />
-    <div class="inner">
-      <% if user_signed_in? %> 
-        <div class="greeting">
-          <%= "こんにちは," %>
-          <%= link_to "#{current_user.nickname}さん", user_session_path(current_user), class: :greeting__link %>
+   <img class="main-image" src="https://i.gyazo.com/c117cf90eeb03fe52ec076b935dc3569.jpg" alt="トップ画面" width="100%" height="360vh" />
+   <div class="main-area">
+      <div class="inner">
+        <h2 class="page-heading">投稿一覧</h2>
+        <% if user_signed_in? %> 
+          <div class="greeting">
+            <%= "こんにちは," %>
+            <%= link_to "#{current_user.nickname}さん", user_session_path(current_user), class: :greeting__link %>
+          </div>
+        <% end %>
+        <div class="card__wrapper">
+          <%= render partial: 'post', collection: @posts %>
         </div>
-      <% end %>
-      <%#<div class="card__wrapper"> %>
-        <%#= render partial: 'post', collection: @posts %>
-      <%#</div>%>
+      </div>
     </div>
 </main>

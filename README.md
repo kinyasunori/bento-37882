@@ -46,8 +46,8 @@ https://docs.google.com/spreadsheets/d/18uT_FAjXoioy3X9dH2Yk0jOHR8uWZJ8gm_UA1Vln
 | ----------- | ----------- | ------------------------------ |
 | title       | string      | null: false                    |
 | menu        | text        | null: false                    |  
-| recipe      | text        |                     |
-| user_id     | references  | null: false, foreign_key: true |
+| recipe      | text        |                                |
+| user        | references  | null: false, foreign_key: true |
 
 ### Association
 
