@@ -5,5 +5,7 @@ ja:
         nickname: ニックネーム
         profile: プロフィール
       post:
-        text: テキスト
+        title: タイトル
         image: 画像
+        menu: メニュー
+        recipe: レシピ

@@ -53,7 +53,7 @@ a {
 .logo {
   width: 185px;
   height: 80px;
-  margin-top: 5px;
+  margin-top: 6px;
 }
 .nav__right{
   margin-top: 15px;
@@ -128,34 +128,46 @@ a {
 /* メイン */
 
 .main-image {
-  position: relative;
   object-fit: cover;
   opacity: 60%
 }
+.main-area{
+  background: #d9ecf9;
+  border-top:  2px #f8c982f3 solid ;
+}
 .greeting{
-  margin-top: 100px;
-  position: absolute;
-  top: 0;
+  margin-bottom: 20px;
   font-size: large;
   font-weight: bold;
+  color: #999;
+
 }
 .greeting__link{
+  color: #e65e5e;
   text-decoration: underline;
 }
 .page-heading {
+  margin: 20px.0;
+  text-align: center;
   font-size: 30px;
-  margin-bottom: 28px;
+  color: #87CEFA;
+  border: 1px #87CEFA solid;
+}
+h2{
+  letter-spacing: 40px
 }
 .card__wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  min-height: calc(100vh - 161px);
+  min-height: calc(100vh - 500px);
+
 }
 .card {
   width: calc((100% - 50px) / 3);
   margin-bottom: 40px;
+  border: 2px #87CEFA solid;
 }
 .card__img {
   margin-bottom: 16px;
