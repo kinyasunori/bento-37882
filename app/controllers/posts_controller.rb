@@ -26,6 +26,7 @@ class PostsController < ApplicationController
     @comments = @post.comments.includes(:user)
   end
 
+
   def edit
   end
 
@@ -46,6 +47,7 @@ class PostsController < ApplicationController
       redirect_to root_path
     end
   end
+
 
   
 
