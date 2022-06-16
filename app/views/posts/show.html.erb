@@ -5,7 +5,7 @@
         <p class="post__hedding">
           <%= @post.title%>
         </p>
-        <%= link_to "by #{current_user.nickname}", post_path(@post.user), class: :post__user %>
+        <%= link_to "by #{current_user.nickname}", user_path(@post.user), class: :post__user %>
       
         <div class="post__manage">
           <% if user_signed_in? && current_user.id == @post.user_id %>
